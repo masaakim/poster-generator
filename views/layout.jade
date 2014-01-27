@@ -10,7 +10,8 @@ html
     
     link(rel='stylesheet', href='css/master.css')
   body
-    != content
+    .wapper
+      != content
 
     //- add other scripts through require.js, not here
     script(data-main="js/main", src="js/require.js")
