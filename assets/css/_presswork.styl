@@ -1,0 +1,12 @@
+// .grid
+//   display inline-block
+
+@import '_valuable'
+
+array = 1 .. 10
+
+for num in array
+  .grid-{num}
+    display inline-block
+    width ($width * num / 10)
+  
