@@ -1,12 +1,27 @@
-// .grid
-//   display inline-block
-
 @import '_valuable'
+
+.grid
+  display inline-block
+  box-sizing border-box
+  padding 40px 0
+
+.grid-border
+  border-left 15px solid #f90
+  padding-left 60px
 
 array = 1 .. 10
 
 for num in array
   .grid-{num}
-    display inline-block
-    width ($width * num / 10)
-  
+    //display inline-block
+    width (100% * num / 10)
+    //padding 15px
+
+border-r-pd = 40px
+
+.border-r
+  border-right 8px solid #ddd
+  padding-right border-r-pd
+
+.border-r + .grid
+  padding-left border-r-pd + 20px
